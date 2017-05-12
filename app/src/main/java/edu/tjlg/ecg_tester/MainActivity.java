@@ -21,6 +21,7 @@ import edu.tjlg.ecg_tester.fragment.AboutFragment;
 import edu.tjlg.ecg_tester.fragment.CollectionFragment;
 import edu.tjlg.ecg_tester.fragment.HistoryFragment;
 import edu.tjlg.ecg_tester.fragment.UserInfoFragment;
+import edu.tjlg.ecg_tester.utils.L;
 
 public class MainActivity extends Activity {
 
@@ -42,7 +43,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+		L.show();
 		bindView();
 		setListener();
 		initView();
