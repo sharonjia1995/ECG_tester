@@ -11,7 +11,18 @@ public class ECGApplication extends Application {
 	private boolean loginFlag;
 	private boolean btSocketConnectFlag;
 	public static final int Smaplerate = 250;
-	
+
+	private static ECGApplication application;
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		application = this;
+	}
+
+	public static ECGApplication getInstance(){
+		return application;
+	}
+
 	public boolean getBtSocketConnectFlag() {
 		return btSocketConnectFlag;
 	}

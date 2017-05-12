@@ -52,7 +52,6 @@ public class ViewWaveActivity extends Activity implements ScrollViewListener{
 	private TextView mUserAgeText;
 	private TextView mUserPromptText;
 
-	private ECGApplication mApplication;
 	private String ECGBuleToothFileStr;
 	private File ECGBuletoothFile;
 	private int scrWidth, scrHeight;
@@ -102,24 +101,15 @@ public class ViewWaveActivity extends Activity implements ScrollViewListener{
 		//mUserSexText = (TextView) findViewById(R.id.user_sex_textView);
 		//mUserAgeText = (TextView) findViewById(R.id.user_age_textView);
 		mUserPromptText = (TextView) findViewById(R.id.user_prompt_textView);
-		
-		if(CollectDataActivity.mApplication!=null)
-			if(CollectDataActivity.mApplication.getBtSocketConnectFlag())
-				try {
-					CollectDataActivity.btSocket.close();
-					CollectDataActivity.mApplication.setBtSocketConnectFlag(false);
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
 
-		mApplication = (ECGApplication)this.getApplication();
-
-		if (mApplication != null) {
-//			mUserNameText.setText("姓名：" + mApplication.getName() + "，");
-//			mUserSexText.setText("性别：" + mApplication.getGender() + "，");
-//			mUserAgeText.setText("年龄：" + mApplication.getAge());
-		}
+		if(ECGApplication.getInstance().getBtSocketConnectFlag())
+			try {
+				CollectDataActivity.btSocket.close();
+				CollectDataActivity.mApplication.setBtSocketConnectFlag(false);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 
 		mECGStaticPage = new ECGStaticPage();
 		Bitmap bgBitmap = mECGStaticPage.createStaicECGPage(scrWidth,scrHeight);
@@ -717,7 +707,6 @@ public void getHeartRR(float[] rPeak){
 	/**
 	 * 获取瞬时心率
 	 * @param offsetbiao
-	 * @param datalength
 	 * @param rpeaks
 	 * @return
 	 */

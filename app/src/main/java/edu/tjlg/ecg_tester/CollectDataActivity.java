@@ -87,7 +87,7 @@ public class CollectDataActivity extends Activity{
 		btAdapt = BluetoothAdapter.getDefaultAdapter();
 		if (btAdapt.getState() == BluetoothAdapter.STATE_OFF) {// 如果蓝牙还没开启
 			btAdapt.enable();
-			mApplication.setBtSocketConnectFlag(false);
+			ECGApplication.getInstance().setBtSocketConnectFlag(false);
 			//			Toast.makeText(CollectDataActivity.this, "请先打开蓝牙", Toast.LENGTH_LONG).show();
 		}
 		if(mApplication.getBtSocketConnectFlag()){
@@ -107,7 +107,7 @@ public class CollectDataActivity extends Activity{
 				if(mApplication.getBtSocketConnectFlag()){
 					try {
 						CollectDataActivity.btSocket.close();
-						mApplication.setBtSocketConnectFlag(false);
+						ECGApplication.getInstance().setBtSocketConnectFlag(false);
 						connectTv.setText("点击重新连接");
 						measureECGBtn.setVisibility(View.GONE);
 						mTextView.setText("蓝牙连接已断开！");
@@ -217,14 +217,14 @@ public class CollectDataActivity extends Activity{
 			try {
 				btSocket = btDev.createRfcommSocketToServiceRecord(uuid);
 				btSocket.connect();
-				mApplication.setBtSocketConnectFlag(true);
+				ECGApplication.getInstance().setBtSocketConnectFlag(true);
 
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				mTextView.setText("蓝牙连接失败！");
 				connectTv.setText("点击重新连接");
-				mApplication.setBtSocketConnectFlag(false);
+				ECGApplication.getInstance().setBtSocketConnectFlag(false);
 				Toast.makeText(CollectDataActivity.this, "连接失败，请重新点击连接！", Toast.LENGTH_LONG).show();
 			}
 			if(mApplication.getBtSocketConnectFlag()){

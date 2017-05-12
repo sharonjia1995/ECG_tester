@@ -61,7 +61,7 @@ public class AboutFragment extends Fragment{
 		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.bluetooth_layout, null);
 		
-		mApplication = (ECGApplication) getActivity().getApplication();
+		mApplication = ECGApplication.getInstance();
 		
 		bindView(view);
 		setListener();

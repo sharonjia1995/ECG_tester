@@ -62,11 +62,10 @@ public class CollectionFragment extends Fragment{
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.collect_data, null);
-		
+		mApplication = ECGApplication.getInstance();
 		bindView(view);
 		setListener();
 		initView();
-		
 		return view;
 	}
 	private void bindView(View view) {
@@ -101,7 +100,7 @@ public class CollectionFragment extends Fragment{
 				if (mApplication.getBtSocketConnectFlag()){
 					try {
 						CollectDataActivity.btSocket.close();
-						mApplication.setBtSocketConnectFlag(false);
+						ECGApplication.getInstance().setBtSocketConnectFlag(false);
 						mConnectECGButton.setText("点击重新连接");
 						mMeasureECGButton.setEnabled(false);
 						mPromptText.setText("蓝牙连接已断开！");
@@ -140,8 +139,6 @@ public class CollectionFragment extends Fragment{
 		mPromptText.setText("正在准备连接蓝牙...");
 		mMeasureECGButton.setEnabled(false);
 		
-		mApplication = (ECGApplication)getActivity().getApplication();
-		
 		IntentFilter intent = new IntentFilter();
 		intent.addAction(BluetoothDevice.ACTION_FOUND);// 用BroadcastReceiver来取得搜索结果
 		intent.addAction(BluetoothDevice.ACTION_BOND_STATE_CHANGED);
@@ -154,7 +151,7 @@ public class CollectionFragment extends Fragment{
 		btAdapt = BluetoothAdapter.getDefaultAdapter();
 		if (btAdapt.getState() == BluetoothAdapter.STATE_OFF) {// 如果蓝牙还没开启
 			btAdapt.enable();
-			mApplication.setBtSocketConnectFlag(false);
+			ECGApplication.getInstance().setBtSocketConnectFlag(false);
 			//			Toast.makeText(CollectDataActivity.this, "请先打开蓝牙", Toast.LENGTH_LONG).show();
 		}
 		
@@ -266,18 +263,18 @@ public class CollectionFragment extends Fragment{
 			try {
 				btSocket = btDev.createRfcommSocketToServiceRecord(uuid);
 				btSocket.connect();
-				mApplication.setBtSocketConnectFlag(true);
+				ECGApplication.getInstance().setBtSocketConnectFlag(true);
 
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				mPromptText.setText("蓝牙连接失败！");
 				mConnectECGButton.setText("点击重新连接");
-				mApplication.setBtSocketConnectFlag(false);
+				ECGApplication.getInstance().setBtSocketConnectFlag(false);
 				Toast.makeText(getActivity(), "连接失败，请重新点击连接！", Toast.LENGTH_SHORT).show();
 			}
 			
-			if (mApplication.getBtSocketConnectFlag()){
+			if (ECGApplication.getInstance().getBtSocketConnectFlag()){
 				mMeasureECGButton.setEnabled(true);
 				mConnectECGButton.setText("断开连接");
 				mPromptText.setText("蓝牙连接成功！");

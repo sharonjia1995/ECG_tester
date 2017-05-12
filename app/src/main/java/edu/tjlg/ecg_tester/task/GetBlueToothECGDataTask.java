@@ -8,6 +8,7 @@ import java.io.InputStream;
 import edu.tjlg.ecg_tester.CollectDataActivity;
 import edu.tjlg.ecg_tester.R;
 import edu.tjlg.ecg_tester.ViewWaveActivity;
+import edu.tjlg.ecg_tester.application.ECGApplication;
 import edu.tjlg.ecg_tester.common.CommonManage;
 import edu.tjlg.ecg_tester.common.CustomProgressDialog;
 
@@ -59,7 +60,7 @@ public class GetBlueToothECGDataTask extends AsyncTask<String, Integer,String>{
 		String filestr = cm.creatECGFile(fos, fi);
 		fi = new File(filestr);
 		try {
-			if(CollectDataActivity.mApplication.getBtSocketConnectFlag()){
+			if(ECGApplication.getInstance().getBtSocketConnectFlag()){
 				btInput = CollectDataActivity.btSocket.getInputStream();
 				//btInput.mark(0);
 				//				btInput.reset();
