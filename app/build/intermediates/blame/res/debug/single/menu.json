@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\menu\\main.xml"
     }

@@ -1,7 +1,7 @@
 [
     {
-        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_layout.xml",
-        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\report_layout.xml"
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\diagnosis_layout.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\diagnosis_layout.xml"
     },
     {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_scatterplot_layout.xml",
@@ -12,20 +12,80 @@
         "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\base_head.xml"
     },
     {
-        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_fastlowplot_layout.xml",
-        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\report_fastlowplot_layout.xml"
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_ecgfile.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\view_ecgfile.xml"
     },
     {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_histogramplot_layout.xml",
-        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\report_histogramplot_layout.xml"
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_layout.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\report_layout.xml"
     },
     {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bluetooth_layout.xml",
         "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\bluetooth_layout.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_histogramplot_layout.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\report_histogramplot_layout.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_progress_dialog.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\custom_progress_dialog.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\base_head.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\base_head.xml"
+    },
+    {
+        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_ecgfile.xml",
+        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\view_ecgfile.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_fastlowplot_layout.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\report_fastlowplot_layout.xml"
+    },
+    {
+        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_layout.xml",
+        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\report_layout.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_scatterplot_layout.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\report_scatterplot_layout.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\record_list_item.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\record_list_item.xml"
+    },
+    {
+        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_fastlowplot_layout.xml",
+        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\report_fastlowplot_layout.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_heartrateplot_layout.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\report_heartrateplot_layout.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\collect_data.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\collect_data.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tester_info_layout.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\tester_info_layout.xml"
+    },
+    {
+        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_histogramplot_layout.xml",
+        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\report_histogramplot_layout.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bluetooth_layout.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\bluetooth_layout.xml"
     },
     {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_progress_dialog.xml",
@@ -34,10 +94,6 @@
     {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\collect_data.xml",
         "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\collect_data.xml"
-    },
-    {
-        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_ecgfile.xml",
-        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\view_ecgfile.xml"
     },
     {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_heartrateplot_layout.xml",
@@ -52,8 +108,16 @@
         "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\record_list_item.xml"
     },
     {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wave_layout.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\wave_layout.xml"
+    },
+    {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wave_layout.xml",
         "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\wave_layout.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\userinfo_layout.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\userinfo_layout.xml"
     },
     {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\layout\\diagnosis_layout.xml",

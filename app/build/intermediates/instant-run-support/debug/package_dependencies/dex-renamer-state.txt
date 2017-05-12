@@ -1,4 +1,4 @@
-#Wed Apr 19 20:53:30 CST 2017
-base.0=D\:\\WorkSpace\\edg419\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-19.1.0_6d87e8092df78a27a58d05e12334068567abf6ee
+#Fri May 12 20:49:15 CST 2017
+base.0=D\:\\github_project\\ECG_tester\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-19.1.0_6d87e8092df78a27a58d05e12334068567abf6ee
 renamed.0=classes.dex
-file.0=D\:\\WorkSpace\\edg419\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-19.1.0_6d87e8092df78a27a58d05e12334068567abf6ee\\classes.dex
+file.0=D\:\\github_project\\ECG_tester\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-19.1.0_6d87e8092df78a27a58d05e12334068567abf6ee\\classes.dex

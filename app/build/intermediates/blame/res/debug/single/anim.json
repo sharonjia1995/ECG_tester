@@ -2,5 +2,9 @@
     {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\anim\\loading.xml",
         "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\anim\\loading.xml"
+    },
+    {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\anim\\loading.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\anim\\loading.xml"
     }
 ]

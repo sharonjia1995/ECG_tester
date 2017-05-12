@@ -40,7 +40,7 @@ public class UserInfoActivity extends Activity{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub 123123123123
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.userinfo_layout);
 
