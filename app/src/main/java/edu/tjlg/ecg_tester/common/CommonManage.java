@@ -139,13 +139,17 @@ public class CommonManage {
 	}
 
 	private String getJsonStr(){
+		TesterInfo testerInfo = UserInfoUtil.getTesterInfo(context);
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+		Calendar mCalendar = Calendar.getInstance();
+		String beginTime = simpleDateFormat.format(mCalendar.getTime()).toString();
 		JSONObject testInfoJSONObject = new JSONObject();
 		try {
-			testInfoJSONObject.put("name",CollectDataActivity.mApplication.getName());
-			testInfoJSONObject.put("gender",CollectDataActivity. mApplication.getGender());
-			testInfoJSONObject.put("age", CollectDataActivity.mApplication.getAge());
-			testInfoJSONObject.put("phoneNum",CollectDataActivity. mApplication.getPhoneNum());
-			testInfoJSONObject.put("illness", CollectDataActivity.mApplication.getIllness());
+			testInfoJSONObject.put("name",testerInfo.getName());
+			testInfoJSONObject.put("gender",testerInfo.getGender());
+			testInfoJSONObject.put("age", testerInfo.getAge());
+			testInfoJSONObject.put("phoneNum",testerInfo.getPhoneNum());
+			testInfoJSONObject.put("illness", testerInfo.getIllness());
 			testInfoJSONObject.put("beginTime", beginTime);
 			//testInfoJSONObject.put("rPeakStr", "");
 			//testInfoJSONObject.put("preBeatList", "");
