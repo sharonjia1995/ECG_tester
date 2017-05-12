@@ -8,6 +8,7 @@ import java.util.UUID;
 import edu.tjlg.ecg_tester.application.ECGApplication;
 import edu.tjlg.ecg_tester.common.CustomProgressDialog;
 import edu.tjlg.ecg_tester.task.GetBlueToothECGDataTask;
+import edu.tjlg.ecg_tester.utils.Logger;
 
 import android.app.Activity;
 import android.app.AlertDialog.Builder;
@@ -57,7 +58,10 @@ public class CollectDataActivity extends Activity{
 	private String ECGDeviceAddress;
 	private boolean ECGDeviceFlag = false;
 	private boolean btAdaptStartDiscoveryFlag = false;
-	private Timer timer = new Timer();  
+	private Timer timer = new Timer();
+
+	private Logger logger =new Logger("CollectDataActivity");
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -134,6 +138,7 @@ public class CollectDataActivity extends Activity{
 					//String [] params = {fi.toString()};
 					//progressDialog = CustomProgressDialog.createDialog(CollectDataActivity.this);
 					//这里采用AsyncTask异步线程方式接受数据有点不好，使用Thread+handler
+					logger.e("开启getBlueToothECGDataTask 任务");
 					getBlueToothECGDataTask = new GetBlueToothECGDataTask(CollectDataActivity.this, progressBarHorizontal);
 					getBlueToothECGDataTask.execute();
 				}else{
@@ -208,6 +213,7 @@ public class CollectDataActivity extends Activity{
 		}
 	};
 	private void connectECGDevice(){
+		logger.e("connectECGDevice");
 		Log.e("", "---- 准备配对！");
 		btAdapt.cancelDiscovery();
 		UUID uuid = UUID.fromString(SPP_UUID);
@@ -217,6 +223,7 @@ public class CollectDataActivity extends Activity{
 			try {
 				btSocket = btDev.createRfcommSocketToServiceRecord(uuid);
 				btSocket.connect();
+				logger.e("btSocket 初始化成功");
 				ECGApplication.getInstance().setBtSocketConnectFlag(true);
 
 			} catch (IOException e) {
