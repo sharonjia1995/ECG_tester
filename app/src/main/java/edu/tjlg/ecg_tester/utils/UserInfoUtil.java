@@ -21,8 +21,6 @@ public class UserInfoUtil {
         testerInfo.setPhoneNum(mapUser.get("phoneNum"));
         testerInfo.setIllness(mapUser.get("illness"));
         testerInfo.setAge(mapUser.get("age"));
-
-
         return testerInfo;
     }
 }

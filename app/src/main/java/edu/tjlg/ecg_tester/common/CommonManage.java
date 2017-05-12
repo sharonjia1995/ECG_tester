@@ -12,6 +12,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.tjlg.ecg_tester.CollectDataActivity;
+import edu.tjlg.ecg_tester.domain.TesterInfo;
+import edu.tjlg.ecg_tester.utils.UserInfoUtil;
 
 import android.content.Context;
 import android.util.Log;
@@ -96,8 +98,11 @@ public class CommonManage {
 				+mCalendar.get(Calendar.DAY_OF_MONTH)+ mCalendar.get(Calendar.HOUR_OF_DAY)+
 				+mCalendar.get(Calendar.MINUTE)+mCalendar.get(Calendar.SECOND);
 		beginTime = simpleDateFormat.format(mCalendar.getTime()).toString();
-		
-		String filestr = "sdcard/ECGBlueToothFile/" +CollectDataActivity.mApplication.getName();
+
+
+		TesterInfo testerInfo = UserInfoUtil.getTesterInfo(context);
+
+		String filestr = "sdcard/ECGBlueToothFile/" +testerInfo.getName();
 		filestr += "_";
 		filestr += fileId ;
 		filestr+= ".txt";

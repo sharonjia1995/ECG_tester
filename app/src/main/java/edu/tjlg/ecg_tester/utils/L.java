@@ -70,8 +70,4 @@ public class L {
         return obj.getClass().getCanonicalName();
     }
 
-    public static void show(){
-        Log.e("asd","aaaa");
-    }
-
 }
