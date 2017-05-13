@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
 		setListener();
 		initView();
 		
-		mApplication = (ECGApplication)this.getApplication();
+		mApplication = ECGApplication.getInstance();
 		mDbOperate = new DbOperate(this);
 		mapUser = mDbOperate.viewList(1, userInfoList);
 

@@ -1,23 +1,23 @@
 [
     {
-        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\last_bg.png",
-        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\drawable-hdpi\\last_bg.png"
-    },
-    {
         "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\loading_07.png",
         "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\drawable-hdpi\\loading_07.png"
+    },
+    {
+        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\last_bg.png",
+        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\drawable-hdpi\\last_bg.png"
     },
     {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\loading_03.png",
         "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\drawable-hdpi\\loading_03.png"
     },
     {
-        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ecg_collect.png",
-        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\drawable-hdpi\\ecg_collect.png"
-    },
-    {
         "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\loading_01.png",
         "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\drawable-hdpi\\loading_01.png"
+    },
+    {
+        "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ecg_collect.png",
+        "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\drawable-hdpi\\ecg_collect.png"
     },
     {
         "merged": "D:\\WorkSpace\\edg419\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_bg.png",

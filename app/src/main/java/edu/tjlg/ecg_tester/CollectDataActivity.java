@@ -67,7 +67,7 @@ public class CollectDataActivity extends Activity {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.collect_data);
-        mApplication = ECGApplication.getInstance();
+        mApplication = (ECGApplication) this.getApplication();
 
         mTextView = (TextView) findViewById(R.id.collect_textview);
         connectECGBtn = (RelativeLayout) findViewById(R.id.connect_ecg_rl);

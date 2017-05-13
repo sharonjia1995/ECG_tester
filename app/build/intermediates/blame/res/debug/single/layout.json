@@ -56,6 +56,10 @@
         "source": "D:\\WorkSpace\\edg419\\app\\src\\main\\res\\layout\\report_layout.xml"
     },
     {
+        "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\collect_data2.xml",
+        "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\collect_data2.xml"
+    },
+    {
         "merged": "D:\\github_project\\ECG_tester\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_scatterplot_layout.xml",
         "source": "D:\\github_project\\ECG_tester\\app\\src\\main\\res\\layout\\report_scatterplot_layout.xml"
     },

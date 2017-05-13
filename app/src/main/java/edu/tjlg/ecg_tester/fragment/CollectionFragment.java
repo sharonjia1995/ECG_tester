@@ -35,6 +35,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static edu.tjlg.ecg_tester.CollectDataActivity.mApplication;
+
 @SuppressLint("NewApi")
 public class CollectionFragment extends Fragment{
 
@@ -44,7 +46,6 @@ public class CollectionFragment extends Fragment{
 	private Button mMeasureECGButton;
 
 	private GetBlueToothECGDataTask getBlueToothECGDataTask;
-	public static ECGApplication mApplication;
 	private ProgressBar progressBarHorizontal;
 
 	static final String SPP_UUID = "00001101-0000-1000-8000-00805F9B34FB";
@@ -62,12 +63,13 @@ public class CollectionFragment extends Fragment{
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.collect_data, null);
-		mApplication = ECGApplication.getInstance();
+
 		bindView(view);
 		setListener();
 		initView();
 		return view;
 	}
+
 	private void bindView(View view) {
 		mTitleText = (TextView) view.findViewById(R.id.title_textView);
 		mPromptText = (TextView) view.findViewById(R.id.collect_textview);
@@ -88,11 +90,6 @@ public class CollectionFragment extends Fragment{
 	private void setListener() {
 		// TODO Auto-generated method stub
 		mConnectECGButton.setOnClickListener(new View.OnClickListener() {
-
-			
-			
-			
-			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
@@ -105,7 +102,6 @@ public class CollectionFragment extends Fragment{
 						mMeasureECGButton.setEnabled(false);
 						mPromptText.setText("蓝牙连接已断开！");
 					} catch (IOException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				} else {
@@ -119,14 +115,8 @@ public class CollectionFragment extends Fragment{
 
 			@Override
 			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-
 				if (mApplication.getBtSocketConnectFlag()) {
 					mMeasureECGButton.setText("采集中...");
-					// String [] params = {fi.toString()};
-					// progressDialog =
-					// CustomProgressDialog.createDialog(CollectDataActivity.this);
-					// 这里采用AsyncTask异步线程方式接受数据有点不好，使用Thread+handler
 					getBlueToothECGDataTask = new GetBlueToothECGDataTask(getActivity(), progressBarHorizontal);
 					getBlueToothECGDataTask.execute();
 				}
